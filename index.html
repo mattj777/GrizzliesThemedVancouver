@@ -29,14 +29,14 @@
 
 var mymap = L.map('map', {
     center: [49.231366956071724, -123.06102668250912],
-    zoom: 7,
-    maxZoom: 10,
-    minZoom: 6,
+    zoom: 1,
+    maxZoom: 5,
+    minZoom: 1,
     detectRetina: true // detect whether the sceen is high resolution or not.
 });
 
 // 2. Add a base map.
-L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
+L.tileLayer('file:///C:/Users/Matt and Catherine/Workspace/GrizzliesThemedVancouver/Tiles/try2/{z}/{x}/{y}.png').addTo(mymap);
 
 
 var mytile =L.tileLayer('assets/tiles/{z}/{x}/{y}.png', {
